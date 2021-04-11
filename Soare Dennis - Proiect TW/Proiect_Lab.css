@@ -1,0 +1,186 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: rgb(48, 48, 170);
+    }
+}
+
+header {
+    display: grid;
+    position: relative;
+    grid-template-columns: 100px 100px auto;
+    grid-template-rows: 70px 1fr;
+    background-color: #333333;
+    justify-content: space-around;
+}
+
+#descriere {
+    display: grid;
+    grid-template-columns: 50px 80px 200px 200px;
+    padding: 10px;
+}
+
+#cast::after {
+    content: "Official Sites: Disney+";
+    padding: 100px;
+    margin: 100px;
+    color: #000;
+    font-weight: bold;
+   }
+
+#intro {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+
+#intro p{
+    font-size: 20px;
+    align-self: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+}
+
+header h2 {
+    color: white;
+}
+
+h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+h6 {
+    color: #fff;
+    margin: 5px;
+}
+
+h4 {
+    display: none;
+}
+
+header h1,
+h2,
+h3 {
+    padding: 5px;
+    margin: 30px;
+    margin-top: 5px;
+}
+
+main,
+footer {
+    background-color: #eee;
+    float: none;
+}
+
+img {  
+    width: 75%;  
+    max-width: 250px;
+    margin: 7px; 
+}  
+
+img:hover {
+    width: 250px;
+}
+
+#director {
+    padding: 10px;
+}
+
+#tabel-cast {
+    border: 2px dotted black;
+    background-color: #997e7e;
+    margin: 30px;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #fbfbfb;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: #b9dfdf;
+}
+
+section h2 {
+    color: #292626;
+    font-size: 30px;
+    float: left;
+    width: 100%;
+}
+
+section h2:hover {
+    color: rgba(255, 0, 0, 0.671);
+    font-size: 35px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+p {
+    margin: 15px;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width: 300px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.dropdown-content {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+figure {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+0%   {background-color: red;}
+25%  {background-color: yellow;}
+50%  {background-color: blue;}
+100% {background-color: green;}
+}
