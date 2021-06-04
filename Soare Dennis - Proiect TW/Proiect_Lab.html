@@ -4,6 +4,7 @@
     <title> Soul </title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Proiect_Lab.css"/>
+    <script type="text/javascript" src="Proiect_lab.js"></script>
 </head>
 <body>
     <header>
@@ -40,7 +41,7 @@
             </div>
         </div>
         <section id="cast">
-            <h2 class="bold italic"> Cast </h2>
+            <h2 class="bold italic" class="pizza"> Cast </h2>
             <table id="tabel-cast">
                 <thead>
                     <tr>
@@ -130,6 +131,19 @@
             </p>
         </section>
         <figure></figure>
+
+        <p id="size">JavaScript can change the style of an HTML element.</p>
+   <p id="style">JavaScript can change the style of an HTML element.</p>
+   <button type="button"
+   onclick="document.getElementById('size').style.fontSize='35px'">Size</button>
+   <button type="button" onclick="document.getElementById('style').style.fontStyle='italic'">Style</button>
+
+   <h3>Click on the button to get the class value </h3></br>  
+    <input type="button" id="btn" value="Click me" class="myClass" onclick="getClass()">  
+    <label>Text </label>
+    <input type="text">
+    <input type="checkbox"> Checkbox
+    <input type="radio"> Radio
     </main>
     <footer>
         2021, Tehnici Web, FMI UNIBUC INC.

@@ -8,6 +8,11 @@
     }
 }
 
+@media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }
+
 header {
     display: grid;
     position: relative;
@@ -167,7 +172,7 @@ p {
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: blue;}
 
 figure {
     width: 100px;
